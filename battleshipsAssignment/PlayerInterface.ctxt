@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=PlayerInterface
+comment0.text=\r\n\ You\ should\ define\ a\ constructor\ with\ a\ single\ String\ parameter,\ which\ defines\ the\ display\ name\ of\ the\ player\r\n\ \r\n\ \r\n\ This\ type\ represents\ individual\ players\ in\ the\ game\ of\ battleships.\r\n\ The\ methods\ provided\ will\ be\ used\ by\ the\ Game\ class\ as\ the\ game\ is\ played.\ \r\n\ The\ game\ will\ initially\ call\ choosePlacement\ once\ for\ each\ ship.\ \r\n\ Once\ all\ ships\ are\ placed\ then\ the\ game\ will\ repeatedly\ (in\ turn)\ call\ the\ chooseShot\ method.\ \r\n\ After\ each\ chooseShot\ method\ the\ game\ will\ inform\ the\ player\ of\ the\ result\ of\ the\ shot\ with\ the\ shotResult\ method.\r\n\ The\ player\ will\ also\ be\ informed\ of\ opponent's\ shots\ with\ the\ opponentShot\ method.\ This\ could\ be\ used\ to\ update\ a\ local\ copy\ of\ the\ game\ board\ for\ display\ to\ the\ user.\r\n\ \r\n
+comment1.params=ship\ board
+comment1.target=Placement\ choosePlacement(ShipInterface,\ BoardInterface)
+comment1.text=\r\n\ @param\ ship\ The\ ship\ to\ be\ placed\r\n\ \r\n\ @param\ board\ (A\ clone\ of)\ the\ current\ board\ state\ to\ which\ the\ ship\ will\ be\ added\r\n\ \r\n\ @return\ The\ placement\ (position\ and\ orientation)\ of\ the\ ship\ specified\ by\ the\ player\r\n\ \r\n\ @throws\ PauseException\ At\ any\ stage\ the\ user\ can\ choose\ to\ enter\ "pause"\ (case\ insensitive)\ to\ make\ the\ game\ return\ to\ \r\n\ the\ main\ menu\r\n\ \r\n
+comment2.params=
+comment2.target=Position\ chooseShot()
+comment2.text=\r\n\ @return\ The\ shot\ chosen\ by\ the\ player\r\n\ \r\n\ @throws\ PauseException\ At\ any\ stage\ the\ user\ can\ choose\ to\ enter\ "pause"\ (case\ insensitive)\ to\ make\ the\ game\ return\ to\ \r\n\ the\ main\ menu\r\n
+comment3.params=position\ status
+comment3.target=void\ shotResult(Position,\ ShotStatus)
+comment3.text=\r\n\ After\ the\ game\ calls\ the\ chooseShot\ method,\ it\ then\ calls\ this\ method\ with\ the\ result\ of\ the\ shot.\r\n\ The\ player\ may\ choose\ to\ keep\ track\ of\ the\ results\ of\ previous\ shots\ in\ its\ state\r\n\ \r\n\ @param\ position\ The\ position\ of\ the\ shot\r\n\ \r\n\ @param\ status\ The\ result\ of\ the\ shot\r\n
+comment4.params=position
+comment4.target=void\ opponentShot(Position)
+comment4.text=\r\n\ After\ the\ game\ has\ received\ the\ opponent's\ shot\ this\ method\ is\ called.\ It\ does\ not\ \r\n\ affect\ the\ progress\ of\ the\ game,\ but\ may\ be\ of\ interest\ to\ the\ player\ (particularly\ a\ human\ player).\r\n\ @param\ position\ The\ position\ that\ the\ opponent\ chose\ for\ their\ shot.\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\r\n\ @return\ A\ string\ representation\ of\ the\ player\ i.e.\ the\ display\ name\ provided\ as\ \r\n\ a\ parameter\ to\ the\ constructor.\r\n
+numComments=6

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=PauseException
+comment1.params=
+comment1.target=PauseException()
+comment2.params=message
+comment2.target=PauseException(java.lang.String)
+comment3.params=cause
+comment3.target=PauseException(java.lang.Throwable)
+comment4.params=message\ cause
+comment4.target=PauseException(java.lang.String,\ java.lang.Throwable)
+numComments=5

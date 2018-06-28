@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Game
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Game\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=player1\ player2
+comment1.target=Game(PlayerInterface,\ PlayerInterface)
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment3.params=
+comment3.target=java.lang.String\ defaultPlayer()
+comment4.params=
+comment4.target=PlayerInterface\ createPlayer()
+comment5.params=board\ player\ other
+comment5.target=void\ placeShips(Board,\ PlayerInterface,\ PlayerInterface)
+comment6.params=
+comment6.target=PlayerInterface\ play()
+comment7.params=filename
+comment7.target=void\ saveGame(java.lang.String)
+comment8.params=filename
+comment8.target=void\ loadGame(java.lang.String)
+numComments=9
